@@ -50,6 +50,16 @@ def print_format(path):
         print("\subsubsection{%s}\n\includepdf[pages=-]{%s%s}\n"%(name,path,pdffile))
 
 
+def fix_file_names(path):
+    # This for the counter comments files which originally had a number
+    # like 201601180330014016775 prepended to each file name
+    file_names = os.listdir(path)
+    for f_name in file_names:
+        if f_name.endswith(".pdf"):
+            new_name = f_name[21:]
+            cmd = "mv %s %s" % (f_name, new_name)
+            sp.call(shlex.split(cmd))
+
 
 if __name__ == "__main__":
     file_name = sys.argv[1]
