@@ -10,7 +10,14 @@ from individuals, academicians, corperates and member of the civil society. The
 consultation resulted in a regulation which prohibited differential pricing.
 
 The code in this repository collects all the comments, counter comments and the
-final regulation in a [single
-pdf](https://github.com/hargup/diff_pricing_cp/raw/master/diff_pricing_cp.pdf).
+final regulation in a single pdf.
 This is important for curation and can also help in deciding regulations in
 other jurisdictions.
+
+You can compile the final pdf by running
+```
+pdflatex diff_pricing_cp.tex
+```
+
+The pdf is also available [here](https://ia601508.us.archive.org/35/items/diff_pricing_cp/diff_pricing_cp.pdf).
+
